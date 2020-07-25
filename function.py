@@ -1,0 +1,151 @@
+def diccionario(na,ap,ed,gu,orga,an,ac):
+
+         pal = [na,ap,str(ed),str(an),gu,orga]
+         j = 0
+         
+         sums = na[0]
+         wor = na[0:3]+ap[0:3]
+         wor1 = wor+ed
+         wor2 = wor+str(an)
+         #sums = no.read(1)
+         sum1 = sums+ap+str(ed)
+         sum2 = sums+ap+str(an)
+         su1 = sums+ap+str(ac)
+         #no.close()
+
+
+         dic = open('diccionario.txt', 'w+')
+         while j < 3:
+           dic.write(pal[j]+pal[j+2])
+           dic.write('\n')
+           dic.write(pal[j]+pal[j+3])
+           dic.write('\n')
+           dic.write(pal[j+1]+pal[j+2])
+           dic.write('\n')
+           dic.write(pal[j+1]+pal[j+3])
+           dic.write('\n')
+           dic.write(pal[j+2]+pal[j])
+           dic.write('\n')
+           dic.write(pal[j+3]+pal[j])
+           dic.write('\n')
+           dic.write(pal[j+2]+pal[j+1])
+           dic.write('\n')
+           dic.write(pal[j+3]+pal[j+1])
+           dic.write('\n')          
+           j = j + 1
+         dic.write(pal[0].capitalize()+pal[2])
+         dic.write(pal[0].capitalize()+pal[3])
+         dic.write(pal[4].capitalize()+pal[2])
+         dic.write('\n')
+         dic.write(pal[4].capitalize()+pal[3])
+         dic.write('\n')
+         dic.write(pal[5].capitalize()+pal[2])
+         dic.write('\n')
+         dic.write(pal[5].capitalize()+pal[3])
+         dic.write('\n')
+         dic.write(sum1)
+         dic.write('\n')
+         dic.write(pal[5]+str(ac))
+         dic.write('\n')
+         dic.write(pal[4]+str(ac))
+         dic.write('\n')
+         dic.write(pal[5].capitalize()+str(ac))
+         dic.write('\n')
+         dic.write(pal[4].capitalize()+str(ac))
+         dic.write('\n')
+         dic.write(sum1.capitalize())
+         dic.write('\n')
+         dic.write(su1)
+         dic.write('\n')
+         dic.write(su1.capitalize())
+         dic.write('\n')
+         dic.write(sum2)
+         dic.write('\n')   
+         dic.write(sum2.capitalize())
+         dic.write('\n')
+         dic.write(wor)
+         dic.write('\n')
+         dic.write(wor.capitalize())
+         dic.write('\n')
+         dic.write(wor1)
+         dic.write('\n')
+         dic.write(wor1.capitalize())
+         dic.write('\n')
+         dic.write(wor2)
+         dic.write('\n')
+         dic.write(wor2.capitalize())
+         dic.write('\n')
+         dic.close()
+
+
+         
+         print "Diccionario generado!"
+
+def diccionario2(na,ap,ed,an,ac,dni):
+         pal = [na,ap,str(ed),str(an),dni]
+         j = 0
+         an2 = int(an)-1
+         sums = na[0]
+         wor = na[0:3]+ap[0:3]
+         wor1 = wor+ed
+         wor2 = wor+str(an)
+         sum1 = sums+ap+str(ed)
+         sum2 = sums+ap+str(an)
+         su1 = sums+ap+str(ac)
+ 
+         dic = open("diccionario"+sums+ap, "w+")
+
+         dic.write(pal[4])
+         dic.write('\n')
+         dic.write(pal[j]+pal[j+4])
+         dic.write('\n')
+         dic.write(pal[j+1]+pal[j+4])
+         dic.write('\n')
+         dic.write(pal[j]+pal[j+2])
+         dic.write(pal[j]+pal[j+3])
+         dic.write('\n')
+         dic.write(pal[j]+str(an2))
+         dic.write('\n')
+         dic.write(pal[j+1]+pal[j+2])
+         dic.write(pal[j+1]+pal[j+3])
+         dic.write('\n')
+         dic.write(pal[j+1]+str(an2))
+         dic.write('\n')
+         #dic.write(str(pal[j+2])+pal[0])
+         #dic.write('\n')
+         dic.write(pal[j+3]+pal[0])
+         dic.write('\n')
+         #dic.write(str(pal[j+2])+pal[j+1])
+         #dic.write('\n')
+         dic.write(pal[j+3]+pal[j+1])
+         dic.write('\n')        
+         dic.write(pal[0]+pal[2])
+         dic.write(pal[0].lower()+pal[2])
+         dic.write(pal[0]+pal[3])
+         dic.write('\n')
+         dic.write(pal[0].lower()+pal[3])
+         dic.write('\n')
+         dic.write(sum1)
+         dic.write(sum1.lower())
+         dic.write(su1)
+         dic.write('\n')
+         dic.write(su1.capitalize())
+         dic.write('\n')
+         dic.write(sum2)
+         dic.write('\n')   
+         dic.write(sum2.lower())
+         dic.write('\n')
+         dic.write(wor)
+         dic.write('\n')
+         dic.write(wor.capitalize())
+         dic.write('\n')
+         dic.write(wor1)
+         dic.write(wor1.capitalize())
+         dic.write(wor2)
+         dic.write('\n')
+         dic.write(wor2.capitalize())
+         dic.write('\n')
+         print "Diccionario generado!"
+         dic.close()
+
+
