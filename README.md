@@ -1,6 +1,6 @@
 IKn0wU
 ======
-Herramienta desarrollada en Python que nos permite recolectar datos sobre personas de Argentina.
+Herramienta desarrollada en Python que nos permite recolectar datos sobre persona
 
 Version Ultra Beta! De a poco iré agregando nuevas funcionalidades.
 
